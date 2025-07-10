@@ -13,7 +13,6 @@ public class Aula5EstruturasCondicionais {
             System.out.println("Não possui Maior Idade");
         }
 
-        
         String categoria;
         if (idade < 15) {
            categoria = "Categoria Infantil";
