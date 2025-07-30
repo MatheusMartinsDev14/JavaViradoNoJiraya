@@ -6,9 +6,10 @@ public class Aula06EstruturasDeRepeticao04 {
         //Condição valorParcela >= 1000
 
         double valorCarro = 30000;
-        for (int i = 0; i < 1 ; i++) {
+        for (int i = 1; i <= valorCarro ; i++) {
             double valoParcela = valorCarro / i;
-            if (valoParcela < 1000){
+            System.out.println("Parcela: " + valoParcela);
+            if (valoParcela <= 1000){
                 System.out.println("Valor maximo de parcelas: " + i);
                 break;
             }
