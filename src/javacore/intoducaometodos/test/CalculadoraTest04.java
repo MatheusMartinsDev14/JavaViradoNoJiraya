@@ -4,12 +4,12 @@ import javacore.intoducaometodos.dominio.Calculadora;
 
 public class CalculadoraTest04 {
     public static void main(String[] args) {
-        int num1 = 1;
-        int num2 = 2;
+        int a = 1;
+        int b = 2;
         Calculadora calculadora = new Calculadora();
-        calculadora.alteraDoisNumeros(num1, num2);
-        System.out.println(num1);
-        System.out.println(num2);
+        calculadora.alteraDoisNumeros(a, b);
+        System.out.println(a);
+        System.out.println(b);
 
     }
 }
