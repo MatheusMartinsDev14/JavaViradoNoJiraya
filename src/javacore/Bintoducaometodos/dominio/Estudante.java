@@ -1,6 +1,6 @@
-package javacore.intruducaoclasses.dominio;
+package javacore.Bintoducaometodos.dominio;
 
-public class Professor {
+public class Estudante {
     public String nome;
     public int idade;
     public char sexo;

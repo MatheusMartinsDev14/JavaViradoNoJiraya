@@ -1,4 +1,4 @@
-package javacore.intoducaometodos.dominio;
+package javacore.Bintoducaometodos.dominio;
 
 public class ImpressoraEstudante {
     public void imprime(Estudante estudante){
