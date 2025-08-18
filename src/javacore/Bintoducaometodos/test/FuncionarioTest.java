@@ -7,11 +7,9 @@ public class FuncionarioTest {
 
         Funcionario funcionario = new Funcionario();
 
-        funcionario.nome = "Matheus";
-        funcionario.idade = 20;
-        funcionario.salario[0] = 1700;
-        funcionario.salario[1] = 5000;
-        funcionario.salario[2] = 7500;
+        funcionario.setNome("Matheus");
+        funcionario.setIdade(20);
+        funcionario.setSalarios(new double[]{1200, 987.32, 2000});
 
         funcionario.imprimir(funcionario);
         funcionario.mediaSalario(funcionario);
