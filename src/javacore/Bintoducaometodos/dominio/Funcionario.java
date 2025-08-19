@@ -15,8 +15,6 @@ public class Funcionario {
     }
 
     public void mediaSalario(Funcionario funcionario){
-
-        double media =0;
         for (double salario: salarios){
             media += salario;
         }
@@ -34,10 +32,6 @@ public class Funcionario {
 
     public double getMedia() {
         return media;
-    }
-
-    public void setMedia(double media) {
-        this.media = media;
     }
 
     public int getIdade() {
