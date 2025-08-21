@@ -1,13 +1,9 @@
 package javacore.Gassociacao.dominio;
 
-public class Time {
+public class Professor {
     private String nome;
 
-    public void imprime(){
-        System.out.println(this.nome);
-    }
-
-    public Time(String nome) {
+    public Professor(String nome) {
         this.nome = nome;
     }
 
