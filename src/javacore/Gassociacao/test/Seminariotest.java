@@ -23,7 +23,7 @@ public class Seminariotest {
 
         Seminario seminario1 = new Seminario("Logica de progração");
         Seminario seminario2 = new Seminario("Recursos Humanos");
-        Seminario seminario3 = new Seminario("Pessoas e Maquinas");
+        Seminario seminario3 = new Seminario("Pessoas e Maquinas", alunos, local1);
 
 
         seminario1.setLocal(local1);

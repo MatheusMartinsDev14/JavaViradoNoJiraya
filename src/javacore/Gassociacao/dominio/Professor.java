@@ -22,6 +22,12 @@ public class Professor {
         this.especialidade = especialidade;
     }
 
+    public Professor(String nome, String especialidade, Seminario[] seminario) {
+        this.nome = nome;
+        this.especialidade = especialidade;
+        this.seminario = seminario;
+    }
+
     public String getNome() {
         return nome;
     }

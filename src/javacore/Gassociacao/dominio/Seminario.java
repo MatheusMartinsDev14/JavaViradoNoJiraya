@@ -25,6 +25,17 @@ public class Seminario {
 
     }
 
+    public Seminario(String titulo, Aluno[] aluno) {
+        this.titulo = titulo;
+        this.aluno = aluno;
+    }
+
+    public Seminario(String titulo, Aluno[] aluno, Local local) {
+        this.titulo = titulo;
+        this.aluno = aluno;
+        this.local = local;
+    }
+
     public Seminario(String titulo) {
         this.titulo = titulo;
     }
