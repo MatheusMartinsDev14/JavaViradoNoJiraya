@@ -5,6 +5,11 @@ public class Aluno {
     private int idade;
     private Seminario seminario;
 
+    public Aluno(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
     public void imprime(){
         System.out.println(this.nome);
         System.out.println(this.idade);
@@ -15,11 +20,6 @@ public class Aluno {
             System.out.println("Não está inscrito em nenhum seminario");
         }
 
-    }
-
-    public Aluno(String nome, int idade) {
-        this.nome = nome;
-        this.idade = idade;
     }
 
     public String getNome() {

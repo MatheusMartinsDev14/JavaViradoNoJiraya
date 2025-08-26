@@ -8,38 +8,19 @@ import javacore.Gassociacao.dominio.Seminario;
 public class Seminariotest {
     public static void main(String[] args) {
 
-        Local local1 = new Local("Usiminas");
-        Local local2 = new Local("Unileste");
+        Local local = new Local("Usiminas");
 
-        Aluno aluno1 = new Aluno("Matheus", 20);
-        Aluno aluno2 = new Aluno("Igor", 20);
-        Aluno aluno3 = new Aluno("Pedro", 19);
-        Aluno[] alunos = {aluno1, aluno2, aluno3};
-        Aluno[] alunos2 = {aluno1, aluno3};
-
-        Professor professor1 = new Professor("Victor Tangoda" , "Direito");
-        Professor professor2 = new Professor("Fernando Tangoda", "TI");
-        Professor[] professores = {professor1, professor2};
-
-        Seminario seminario1 = new Seminario("Logica de progração");
-        Seminario seminario2 = new Seminario("Recursos Humanos");
-        Seminario seminario3 = new Seminario("Pessoas e Maquinas", alunos, local1);
+        Aluno aluno = new Aluno("Matheus", 20);
+        Aluno[] alunos = {aluno};
 
 
-        seminario1.setLocal(local1);
-        seminario1.setAluno(alunos);
-        seminario1.setProfessor(professor1);
+        Professor professor = new Professor("Victor Tangoda" , "Direito");
+        Professor[] professores = {professor};
 
-        seminario2.setLocal(local2);
-        seminario2.setProfessor(professor2);
+        Seminario seminario = new Seminario("Logica de progração");
+        Seminario[] seminariosDisponiveis = {seminario};
 
-        seminario3.setLocal(local1);
-        seminario3.setAluno(alunos2);
-        seminario3.setProfessor(professor2);
-
-        seminario1.imprime();
-        seminario2.imprime();
-        seminario3.imprime();
+        professor.imprime();
 
     }
 }

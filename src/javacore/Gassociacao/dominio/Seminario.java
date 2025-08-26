@@ -7,6 +7,21 @@ public class Seminario {
     private Professor professor;
 
 
+    public Seminario(String titulo, Aluno[] aluno) {
+        this.titulo = titulo;
+        this.aluno = aluno;
+    }
+
+    public Seminario(String titulo, Aluno[] aluno, Local local) {
+        this.titulo = titulo;
+        this.aluno = aluno;
+        this.local = local;
+    }
+
+    public Seminario(String titulo) {
+        this.titulo = titulo;
+    }
+
     public void imprime(){
         System.out.println("-------------------");
         System.out.println("Titulo: " + this.titulo);
@@ -23,21 +38,6 @@ public class Seminario {
             System.out.println("Esse seminario não possui alunos inscritos");
         }
 
-    }
-
-    public Seminario(String titulo, Aluno[] aluno) {
-        this.titulo = titulo;
-        this.aluno = aluno;
-    }
-
-    public Seminario(String titulo, Aluno[] aluno, Local local) {
-        this.titulo = titulo;
-        this.aluno = aluno;
-        this.local = local;
-    }
-
-    public Seminario(String titulo) {
-        this.titulo = titulo;
     }
 
     public String getTitulo() {
