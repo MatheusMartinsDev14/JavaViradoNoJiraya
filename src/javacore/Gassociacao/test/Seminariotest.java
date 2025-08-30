@@ -17,7 +17,7 @@ public class Seminariotest {
         Professor professor = new Professor("Victor Tangoda" , "Direito");
         Professor[] professores = {professor};
 
-        Seminario seminario = new Seminario("Logica de progração");
+        Seminario seminario = new Seminario("Logica de progração", "Endereço");
         Seminario[] seminariosDisponiveis = {seminario};
 
         professor.imprime();
