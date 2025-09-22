@@ -3,8 +3,21 @@ package javacore.Hheranca.dominio;
 public class Funcionario extends Pessoa {
     private double salario;
 
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de pessoa");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa 1");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa 2");
+    }
+
     public Funcionario(String nome){
         super(nome);
+        System.out.println("Dentro do construtor de funcionário");
     }
 
     public void imprime(){
