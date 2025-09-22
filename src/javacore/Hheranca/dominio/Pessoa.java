@@ -1,18 +1,9 @@
 package javacore.Hheranca.dominio;
 
 public class Pessoa {
-    protected String nome;
-    protected String cpf;
-    protected Endereco endereco;
-
-    public Pessoa(String nome){
-    this.nome = nome;
-    }
-
-    public Pessoa (String nome, String cpf){
-        this(nome);
-        this.cpf = cpf;
-    }
+    private String nome;
+    private String cpf;
+    private Endereco endereco;
 
     public void imprime(){
         System.out.println(this.nome);
