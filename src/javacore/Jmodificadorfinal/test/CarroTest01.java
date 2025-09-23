@@ -1,6 +1,7 @@
 package javacore.Jmodificadorfinal.test;
 
 import javacore.Jmodificadorfinal.dominio.Carro;
+import javacore.Jmodificadorfinal.dominio.Ferrari;
 
 public class CarroTest01 {
 
@@ -12,6 +13,10 @@ public class CarroTest01 {
         System.out.println(carro.COMPRADOR);
         carro.COMPRADOR.setNome("Kuririn");
         System.out.println(carro.COMPRADOR);
+
+        Ferrari ferrari = new Ferrari();
+        ferrari.setNome("Ferrari");
+        ferrari.imprime();
 
     }
 }
