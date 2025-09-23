@@ -1,7 +1,6 @@
 package javacore.Jmodificadorfinal.test;
 
 import javacore.Jmodificadorfinal.dominio.Carro;
-import javacore.Jmodificadorfinal.dominio.Comprador;
 
 public class CarroTest01 {
 
