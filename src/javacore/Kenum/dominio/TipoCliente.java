@@ -9,6 +9,7 @@ public enum TipoCliente {
 
     TipoCliente(int valor, String nomeRelatorio){
         this.valor = valor;
+        this.nomeRelatorio = nomeRelatorio;
     }
 
     public int getValor() {
