@@ -1,7 +1,6 @@
 package javacore.Lclassesabstratas.test;
 
 import javacore.Lclassesabstratas.dominio.Desenvolvedor;
-import javacore.Lclassesabstratas.dominio.Funcionario;
 import javacore.Lclassesabstratas.dominio.Gerente;
 
 public class FuncionarioTest01 {
