@@ -1,10 +1,8 @@
 package javacore.Npolimorfismo.test;
 
 import javacore.Npolimorfismo.repositorio.Repositorio;
-import javacore.Npolimorfismo.servico.RepositorioBancoDeDados;
 import javacore.Npolimorfismo.servico.RepositorioMemoria;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
