@@ -7,31 +7,22 @@ import java.sql.SQLException;
 public class RuntimeExceptionTest04 {
     public static void main(String[] args) {
 
-        try{
+        try {
             throw new RuntimeException();
-        }catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("Dentro do ArrayIndexOutOfBoundsException");
-        }catch (IndexOutOfBoundsException e){
-            System.out.println("Dentro do IndexOutOfBoundsException");
-        }catch (IllegalArgumentException e){
-            System.out.println("Dentro do IllegalArgumentException");
-        }catch (ArithmeticException e){
-            System.out.println("Dentro do ArithmeticException");
-        }catch (RuntimeException e){
+        } catch (ArrayIndexOutOfBoundsException | IllegalArgumentException | ArithmeticException e) {
+            System.out.println("Dentro do ArrayIndexOutOfBoundsException | IllegalArgumentException | ArithmeticException");
+        } catch (RuntimeException e) {
             System.out.println("Dentro do RuntimeException");
         }
 
         try {
             talvezLanceException();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+        } catch (SQLException | IOException e) {
+            e.printStackTrace();
         }
-
     }
 
-    private static void talvezLanceException() throws SQLException, FileNotFoundException{
+        private static void talvezLanceException () throws SQLException, IOException {
 
-    }
+        }
 }
