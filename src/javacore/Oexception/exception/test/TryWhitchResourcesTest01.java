@@ -2,7 +2,6 @@ package javacore.Oexception.exception.test;
 
 import javacore.Oexception.exception.dominio.Leitor1;
 import javacore.Oexception.exception.dominio.Leitor2;
-
 import java.io.*;
 
 public class TryWhitchResourcesTest01 {
