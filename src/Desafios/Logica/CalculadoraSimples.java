@@ -1,4 +1,4 @@
-package Desafios;
+package Desafios.Logica;
 
 import java.util.Scanner;
 
