@@ -20,4 +20,9 @@ public class Gerente extends Funcionario {
     public double calcularBonus() {
         return this.salario * BONUS_POR_CENTO;
     }
+
+    @Override
+    public void exibirDados() {
+        super.exibirDados();
+    }
 }

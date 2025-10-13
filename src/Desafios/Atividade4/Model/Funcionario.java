@@ -15,7 +15,8 @@ public abstract class Funcionario {
         return 0;
     }
 
-    public void exibirDados(){
+    public void exibirDados() {
+        System.out.println("Nome: " + nome + " | CPF: " + cpf + " | Salário: " + salario + " | Cargo: Funcionario Base");
     }
 
 

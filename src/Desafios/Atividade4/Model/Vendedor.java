@@ -13,4 +13,9 @@ public class Vendedor extends Funcionario{
     public double calcularBonus() {
         return totalVendas * BONUS_POR_VENDA;
     }
+
+    @Override
+    public void exibirDados() {
+        super.exibirDados();
+    }
 }
