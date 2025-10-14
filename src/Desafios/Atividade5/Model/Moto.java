@@ -13,5 +13,4 @@ public class Moto extends Veiculo implements Calculavel{
         return getConsumoMedio() * getCapacidadeTanque() * 1.1;
     }
 
-
 }

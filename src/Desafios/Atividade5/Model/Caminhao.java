@@ -13,15 +13,4 @@ public class Caminhao extends Veiculo implements Calculavel {
         return getConsumoMedio() * getCapacidadeTanque() * 0.85;
     }
 
-    @Override
-    public String toString() {
-        return "Caminhao{" +
-                "marca='" + marca + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", ano=" + ano +
-                ", tipoCombustivel=" + tipoCombustivel +
-                ", consumoMedio=" + consumoMedio +
-                ", capacidadeTanque=" + capacidadeTanque +
-                '}';
-    }
 }

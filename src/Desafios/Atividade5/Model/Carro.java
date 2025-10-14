@@ -12,16 +12,4 @@ public class Carro extends Veiculo implements Calculavel {
     public double calcularAutonomia() {
         return getConsumoMedio() * getCapacidadeTanque();
     }
-
-    @Override
-    public String toString() {
-        return "Carro{" +
-                "marca='" + marca + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", ano=" + ano +
-                ", tipoCombustivel=" + tipoCombustivel +
-                ", consumoMedio=" + consumoMedio +
-                ", capacidadeTanque=" + capacidadeTanque +
-                '}';
-    }
 }

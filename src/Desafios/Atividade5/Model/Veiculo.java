@@ -67,13 +67,6 @@ public abstract class Veiculo {
 
     @Override
     public String toString() {
-        return "Veiculo{" +
-                "marca='" + marca + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", ano=" + ano +
-                ", tipoCombustivel=" + tipoCombustivel +
-                ", consumoMedio=" + consumoMedio +
-                ", capacidadeTanque=" + capacidadeTanque +
-                '}';
+        return marca + " " + modelo + " (" + ano + ") - Combustível: " + tipoCombustivel;
     }
 }
