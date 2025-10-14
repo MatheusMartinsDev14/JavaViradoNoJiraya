@@ -1,6 +1,5 @@
 package Desafios.Atividade4.Util;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class InputUtil {
