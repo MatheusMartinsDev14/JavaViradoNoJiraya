@@ -1,34 +1,35 @@
 package Desafios.Logica.Atividade3;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CaixaEletronico {
-    Scanner scanner = new Scanner(System.in);
     private double saldo = 1000;
-    private double valor;
+    private List<String> extrato = new ArrayList<>();
 
-
-    public void verSaldo() {
-        System.out.println(saldo);
-    }
-
-    public double depositar() {
-        System.out.println("Insira o valor que você deseja depositar: ");
-        valor = scanner.nextInt();
-        saldo += valor;
+    public double getSaldo() {
         return saldo;
     }
 
-    public double sacar() {
-        System.out.println("Insira o valor que você deseja sacar:");
-        valor = scanner.nextInt();
-        if (saldo > valor){
-            System.out.println("Saque realizado com sucesso!");
-            saldo -= valor;
-            return saldo;
+    public boolean depositar(double valor) {
+        if (valor <= 0) {
+            return false;
         }
-        System.out.println("Você não tem saldo suficiente para realizar esse saque");
-        return saldo;
+        saldo += valor;
+        extrato.add("Depósito: + R$" + valor + " | Saldo: R$" + saldo);
+        return true;
     }
 
+    public boolean sacar(double valor) {
+        if (valor <= 0 || valor > saldo) {
+            return false;
+        }
+        saldo -= valor;
+        extrato.add("Saque: - R$" + valor + " | Saldo: R$" + saldo);
+        return true;
+    }
+
+    public List<String> verExtrato() {
+        return extrato;
+    }
 }
